@@ -308,7 +308,18 @@ def add_compound_text_element(doc, config, theme):
             run_sep.font.color.rgb = hex_to_rgb(color_hex)
         
         if link:
-            add_hyperlink_styled(paragraph, link, text, color_hex, font_size)
+            # Item specific color?
+            item_color_val = item.get('font_color')
+            if item_color_val:
+                if item_color_val == 'primary_color':
+                    item_hex = theme.get('primary_color', '000000')
+                else:
+                    item_hex = item_color_val.lstrip('#')
+                # Use item specific color
+                add_hyperlink_styled(paragraph, link, text, item_hex, font_size)
+            else:
+                # Use default element color
+                add_hyperlink_styled(paragraph, link, text, color_hex, font_size)
         else:
             run = paragraph.add_run(text)
             run.font.size = Pt(font_size)
