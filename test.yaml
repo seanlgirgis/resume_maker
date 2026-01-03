@@ -1,0 +1,42 @@
+# Resume Configuration
+# 1. Style Configuration (Optional - allows tweaking without code changes)
+theme:
+  primary_color: "004a99" # The dark blue used in headers
+  accent_color: "E07000"  # The orange bar
+  font_header: "Segoe UI"  # or Arial
+  font_body: "Segoe UI"
+  Top_margin: 12.7
+  Bottom_margin: 12.7
+  left_margin: 12.7
+  right_margin: 12.7
+
+stripe_element:
+  thickness: 4
+  color: primary_color
+  style: solid
+  part_of_header: True
+  first_page_only: True
+
+TEXT_ELEMENT:
+  words: "SEAN LUKA GIRGIS"
+  font_size: 31
+  font_color: primary_color
+  font_style: bold
+  font_alightnment: center
+
+COMPOUND_TEXT_ELEMENT:
+  # "Compound" means it's one line with multiple pieces
+  separator: " • "
+  font_size: 13       # ~1.1em converted to pt
+  font_color: "#333333"
+  font_alignment: "center"
+  items:
+    - text: "Murphy, TX"
+    - text: "214-315-2190"
+    - text: "seanlgirgis@gmail.com"
+      link: "mailto:seanlgirgis@gmail.com"
+    - text: "GitHub"
+      link: "https://github.com/seanlgirgis"
+    - text: "LinkedIn"
+      link: "https://www.linkedin.com/in/seanlgirgis"
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Luka Girgis | Enterprise ML Architect</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Styles for the Download Center Section */
+        .download-center {
+            margin-top: 50px;
+            padding: 30px;
+            background: #f9f9f9;
+            border: 2px dashed var(--primary);
+            text-align: center;
+            border-radius: 8px;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-download.pdf { background: #c0392b; } /* Red for PDF */
+        .btn-download.word { background: #2b579a; } /* Blue for Word */
+        .btn-download:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h1>Sean Luka Girgis</h1>
+        <p style="font-size: 0.85rem; opacity: 0.8;">Enterprise Architect & ML Specialist</p>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home (Resume)</a></li>
+            <li><a href="pages/cv.html">Detailed C.V.</a></li>
+            <li><a href="pages/under_construction.html">Projects Showcase</a></li>
+            <li><a href="pages/under_construction.html">Technical Articles</a></li>
+            <li><a href="pages/under_construction.html">Tutorials</a></li>
+            <li><a href="pages/under_construction.html">Blog</a></li>
+            <li><a href="pages/under_construction.html">About & Contact</a></li>
+        </ul>
+    </nav>
+    </aside>
+
+    <main class="resume-view">
+        <div class="container">
+            <h1 class="name">Sean Luka Girgis</h1>
+            <div class="contact">
+                Murphy, TX • 214-315-2190 • seanlgirgis@gmail.com • 
+                <a href="https://github.com/seanlgirgis" target="_blank">GitHub</a> • 
+                <a href="https://www.linkedin.com/in/sean-girgis-43bb1b5/" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="summary">
+                <strong>Enterprise ML Engineer & Time-Series Specialist</strong> with 20+ years of technical leadership. 
+                Specialist in deploying high-performance <strong>Predictive Capacity Pipelines</strong> for 10,000+ servers. 
+                Expert at bypassing the Python GIL to achieve <span class="metric">10x forecasting throughput</span>.
+            </div>
+
+            <h2>Core ML Engineering Pillars</h2>
+            <div class="pillar-grid">
+                <div>
+                    <strong>Predictive Engineering</strong>
+                    <ul>
+                        <li>Advanced Forecasting: Prophet, LSTM, XGBoost.</li>
+                        <li>High-Performance Data: Feature extraction from Parquet/Spark.</li>
+                        <li>Visualization: Interactive Streamlit dashboards.</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>MLOps & Strategy</strong>
+                    <ul>
+                        <li>Model Competition: Automated champion/challenger selection.</li>
+                        <li>Confidence Modeling: "High Trust" 90-day utilization logic.</li>
+                        <li>Domain Expertise: BMC TrueSight & AppDynamics synthesis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Flagship Project: HorizonScale AI</h2>
+            <div class="project-highlight">
+                <p><strong>Predictive Utilization Pipeline (2,000+ Nodes)</strong></p>
+                <ul>
+                    <li>Turbo Prophet: Parallel execution framework reducing cycles by <span class="metric">90%</span>.</li>
+                    <li>High-Fidelity Training: 3-year historical synthetic foundation.</li>
+                    <li>Interactive Dashboard: 6-month outlooks vs. historical baselines.</li>
+                </ul>
+                <div style="margin-top: 15px;">
+                    <span class="tech-tag">Python</span> <span class="tech-tag">Prophet</span> 
+                    <span class="tech-tag">Streamlit</span> <span class="tech-tag">Spark</span> <span class="tech-tag">Multiprocessing</span>
+                </div>
+            </div>
+
+            <h2>Professional Experience</h2>
+            <div class="experience-header"><span>CITI</span><span>2017 – Dec 2025</span></div>
+            <div style="font-style: italic; color: #666; margin-bottom: 10px; font-weight: bold;">Capacity and Performance Consultant (ML & Infrastructure Strategy)</div>
+            <ul>
+                <li>Architected big-data forecasting for 10,000+ global servers.</li>
+                <li>Automated regional forecasting, reducing manual analysis by <span class="metric">85%</span>.</li>
+                <li>Used BMC TrueSight and AppDynamics for proactive outage detection.</li>
+            </ul>
+
+            <h2>Experience History</h2>
+            <div class="timeline-item"><span><strong>TIAA / CA Technologies</strong> | Senior Performance & APM Lead</span><span>2012 – 2017</span></div>
+            <div class="timeline-item"><span><strong>Senior Software Engineer</strong> | C++, Java, Backend Architecture</span><span>2008 – 2012</span></div>
+            <div class="timeline-item"><span><strong>Software Engineer</strong> | Full-Stack Development</span><span>2000 – 2008</span></div>
+
+            <h2>Education & Certifications</h2>
+            <div class="edu-item"><strong>Humber College</strong> | Post-Graduate Diploma, Computer Science</div>
+            <div class="edu-item"><strong>Zagazig University</strong> | Bachelor of Science, Engineering</div>
+            
+            <section class="download-center">
+                <h3 style="color: var(--primary); margin-top: 0;">Offline Access</h3>
+                <p>Download a copy of my targeted ML & Performance resume for your records:</p>
+                <div class="download-buttons">
+                    <a href="resume.pdf" download class="btn-download pdf">Download as PDF</a>
+                    <a href="resume.docx" download class="btn-download word">Download as Word (.docx)</a>
+                </div>
+            </section>
+
+            <hr style="margin-top: 40px; border: 0; border-top: 1px solid #eee;">
+            <p style="text-align: center; font-size: 0.9rem; color: #888;">
+                Explore more: <a href="pages/under_construction.html">Projects</a> | <a href="pages/under_construction.html">Technical Articles</a> | <a href="pages/cv.html">Full C.V.</a>
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

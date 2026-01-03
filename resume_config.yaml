@@ -1,0 +1,97 @@
+# Resume Configuration
+
+# 1. Header Information
+header:
+  name: "SEAN LUKA GIRGIS"
+  location: "Murphy, TX"
+  phone: "214-315-2190"
+  email: "seanlgirgis@gmail.com"
+  links:
+    - text: "GitHub"
+      url: "https://github.com/..."
+    - text: "LinkedIn"
+      url: "https://linkedin.com/in/..."
+
+# 2. Key Highlight / Summary Box
+# This corresponds to the shaded box at the top
+summary:
+  title: "Enterprise ML Engineer & Time-Series Specialist"
+  subtitle: "with 20+ years of technical leadership."
+  text: >
+    Specialist in deploying high-performance **Predictive Capacity Pipelines** for 10,000+ servers. 
+    Expert at bypassing the Python GIL to achieve **10x forecasting throughput**.
+
+# 3. Two-Column Section: Core Pillars
+# Designed to be rendered as a table or columns
+core_pillars:
+  title: "CORE ML ENGINEERING PILLARS"
+  columns:
+    - header: "Predictive Engineering"
+      items:
+        - "**Advanced Forecasting**: Prophet, LSTM, XGBoost."
+        - "**High-Performance Data**: Feature extraction from Parquet/Spark."
+        - "**Visualization**: Interactive Streamlit dashboards."
+    - header: "MLOps & Strategy"
+      items:
+        - "**Model Competition**: Automated champion/challenger selection."
+        - "**Confidence Modeling**: \"High Trust\" 90-day utilization logic."
+        - "**Domain Expertise**: BMC TrueSight & AppDynamics synthesis."
+
+# 4. Feature Project Box
+# This corresponds to the "Flagship Project" box with tags
+flagship_project:
+  section_title: "FLAGSHIP PROJECT: HORIZONSCALE AI"
+  project_title: "Predictive Utilization Pipeline (2,000+ Nodes)"
+  highlights:
+    - "**Turbo Prophet**: Parallel execution framework reducing cycles by **90%**."
+    - "**High-Fidelity Training**: 3-year historical synthetic foundation."
+    - "**Interactive Dashboard**: 6-month outlooks vs. historical baselines."
+  tags:
+    - "Python"
+    - "Prophet"
+    - "Streamlit"
+    - "Spark"
+    - "Multiprocessing"
+
+# 5. Experience Section
+professional_experience:
+  title: "PROFESSIONAL EXPERIENCE"
+  jobs:
+    - company: "CITI"
+      role: "Capacity and Performance Consultant (ML & Infrastructure Strategy)"
+      dates: "2017 – Dec 2025"
+      # tagline: optional italic text under role
+      highlights:
+        - "Architected big-data forecasting for 10,000+ global servers."
+        - "Automated regional forecasting, reducing manual analysis by **85%**."
+        - "Used BMC TrueSight and AppDynamics for proactive outage detection."
+
+# 6. Compact History Section
+experience_history:
+  title: "EXPERIENCE HISTORY"
+  jobs:
+    - company: "TIAA / CA Technologies"
+      role: "Senior Performance & APM Lead"
+      dates: "2012 – 2017"
+    - company: "Senior Software Engineer"
+      role: "C++, Java, Backend Architecture"
+      dates: "2008 – 2012"
+    - company: "Software Engineer"
+      role: "Full-Stack Development"
+      dates: "2000 – 2008"
+
+# 7. Education
+education:
+  title: "EDUCATION & CERTIFICATIONS"
+  items:
+    - institution: "Humber College"
+      details: "Post-Graduate Diploma, Computer Science"
+    - institution: "Zagazig University"
+      details: "Bachelor of Science, Engineering"
+
+# 8. Style Configuration (Optional - allows tweaking without code changes)
+theme:
+  primary_color: "004080" # The dark blue used in headers
+  accent_color: "E07000"  # The orange bar
+  font_header: "Calibri"  # or Arial
+  font_body: "Calibri"

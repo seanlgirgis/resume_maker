@@ -1,0 +1,119 @@
+:root {
+    --primary: #004a99;
+    --accent: #e67e22;
+    --text: #333;
+    --bg: #f4f7f6;
+    --sidebar-bg: #1a252f;
+}
+
+* { box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); display: flex; flex-direction: column; height: 100vh; }
+
+@media (min-width: 992px) {
+    body { flex-direction: row; overflow: hidden; }
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background: var(--sidebar-bg);
+    color: white;
+    padding: 30px;
+    width: 100%;
+    z-index: 100;
+}
+
+@media (min-width: 992px) {
+    .sidebar { width: 300px; height: 100vh; flex-shrink: 0; }
+}
+
+.sidebar h1 { font-size: 1.5rem; color: var(--accent); margin: 0; text-transform: uppercase; }
+.nav-menu { list-style: none; padding: 30px 0; margin: 0; }
+.nav-menu li { margin-bottom: 15px; }
+.nav-menu a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; display: block; padding: 10px; border-radius: 4px; }
+.nav-menu a:hover, .nav-menu a.active { background: rgba(255,255,255,0.1); color: var(--accent); }
+
+/* Resume Container (Your Original Layout) */
+.resume-view {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 10px solid var(--primary);
+}
+
+/* Your Original Resume Styles Integrated */
+h1.name { margin: 0; font-size: 2.6em; color: var(--primary); letter-spacing: -1px; text-transform: uppercase; text-align: center; }
+.contact { text-align: center; font-size: 1.1em; color: #666; margin-top: 10px; font-weight: 500; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px;}
+.contact a { color: var(--primary); margin: 0 10px; text-decoration: none; }
+h2 { font-size: 1.4em; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; margin-top: 35px; text-transform: uppercase; }
+.summary { font-size: 1.1em; line-height: 1.8; color: #444; margin-top: 20px; border-left: 4px solid var(--primary); padding: 15px; background: #f9f9f9; }
+.project-highlight { background: #fff; border: 1px solid #ddd; padding: 25px; margin: 20px 0; border-left: 6px solid var(--accent); box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+.pillar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+.experience-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2em; color: var(--primary); margin-top: 25px; }
+.tech-tag { display: inline-block; background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin: 4px; font-weight: 600; }
+.timeline-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dotted #ccc; font-size: 1em; }
+.metric { color: var(--accent); font-weight: bold; }
+
+
+/* Download Section Styles */
+.download-center {
+    margin-top: 50px;
+    padding: 30px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-download.pdf { background: #c0392b; } /* Red for PDF */
+.btn-download.word { background: #2b579a; } /* Blue for Word */
+
+.btn-download:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sidebar Nav Updates */
+.nav-menu li {
+    margin-bottom: 15px;
+    padding: 10px; /* Matching the anchor padding for alignment */
+}
+
+/* Specific style for the current page highlight */
+/* Styling for the current page link in the sidebar */
+.nav-menu li.active-page {
+    color: var(--accent);             /* The standard orange highlight */
+    background: rgba(255,255,255,0.1); /* The standard highlight background */
+    font-weight: bold;                /* Bold as requested */
+    padding: 10px;                    /* Matching link padding for alignment */
+    border-radius: 4px;               /* Matching site border radius */
+    cursor: default;                  /* Makes it clear it's not clickable */
+}
